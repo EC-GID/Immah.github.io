@@ -1,154 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Analysis By Immah</title>
-    <style>
-        :root {
-            --dark-bg: #121212;
-            --light-text: #eeeeee;
-            --accent-color: #3182ce;
-            --card-bg: #1e1e1e;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analysis By Immah</title>
+  <meta name="description" content="Learn Data Analysis with Immah: R, Python, SPSS, SAS, ArcGIS Pro, and more! Download notes, books, and scripts.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-bg: #121212;
+      --light-text: #eeeeee;
+      --accent-color: #3182ce;
+      --card-bg: #1e1e1e;
+    }
 
-        body {
-            background-color: var(--dark-bg);
-            color: var(--light-text);
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        header, nav, footer {
-            background-color: var(--card-bg);
-            padding: 20px;
-            text-align: center;
-        }
+    body {
+      background-color: var(--dark-bg);
+      color: var(--light-text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-        nav a {
-            color: var(--light-text);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
+    header, nav, footer {
+      background-color: var(--card-bg);
+      padding: 20px;
+      text-align: center;
+    }
 
-        nav a:hover {
-            color: var(--accent-color);
-        }
+    nav a {
+      color: var(--light-text);
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
 
-        section {
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    nav a:hover {
+      color: var(--accent-color);
+    }
 
-        h1, h2 {
-            color: var(--accent-color);
-        }
-        .download-link a {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 10px 0;
-            transition: all 0.3s;
-        }
+    section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .download-link a:hover {
-            background-color: #2c5282;
-            transform: translateY(-2px);
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    h1, h2 {
+      color: var(--accent-color);
+    }
+
+    .download-link {
+      margin-top: 20px;
+    }
+
+    .download-link a, .download-link ul li a {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 5px 5px;
+      transition: all 0.3s;
+    }
+
+    .download-link a:hover, .download-link ul li a:hover {
+      background-color: #2c5282;
+      transform: translateY(-2px);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .subsection {
+      margin-bottom: 40px;
+    }
+
+    .subsection h3 {
+      color: #66b2ff;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Immah's Data Analysis Hub </h1>
-        <p>Learn R Python  SPSS  SAS  ArcGIS pro  and data skills that rule!</p>
-    </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#data">Data</a>
-        <a href="#notes">Notes</a>
-        <a href="#books">Books</a>
-        <a href="#contact">Contact</a>
-    </nav>
-  <section id="home">
+<body>
+  <header>
+    <h1>Immah's Data Analysis Hub</h1>
+    <p>Learn R, Python, SPSS, SAS, ArcGIS Pro, and master your data analysis skills!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#data">Data</a>
+    <a href="#notes">Notes</a>
+    <a href="#books">Books</a>
+    <a href="#codes-scripts">Coding</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="home">
     <h2>Welcome to My Data World!</h2>
     <p>Hi, I'm Immah 👋 — a data scientist passionate about teaching data analysis using R and Python. Here you'll find resources, tutorials, and downloadable materials to guide you from beginner to pro.</p>
   </section>
-  <section id="Data">
+
+  <style>
+    .home {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+      padding: 100px 40px;
+      text-align: center;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home h2, .home p {
+      background: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #eeeeee;
+    }
+  </style>
+
+  <script>
+    const homeSection = document.querySelector('.home');
+    const images = [
+      "Wallpaper/arcgis-pro.png",
+      "Wallpaper/Immah.jpg",
+      "Wallpaper/python3.png",
+      "Wallpaper/R_class.jpg",
+      "Wallpaper/R-Programming.jpg",
+      "Wallpaper/sas-logo-midnight.png",
+      "Wallpaper/Natural forest.jpeg"
+    ];
+    let currentIndex = 0;
+    function changeBackground() {
+      homeSection.style.backgroundImage = `url('${images[currentIndex]}')`;
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+    setInterval(changeBackground, 4000);
+    changeBackground();
+  </script>
+
+  <section id="data">
     <h2>📓 Data</h2>
-    <div class="download-link"></div>
-    <ul>
-      <li><a href="Data/Argentina-bilateral-instruments-1810-2023.csv" download>Argentina</a></li>
-      <li><a href="Data/Salary.xlsx" download>Salary</a></li>
-      <li><a href="Data/HS.xls" download>HS</a></li>
-      <li><a href="Data/Matched_CHM_with_OptimalWindowSize.csv" download>Matched_CHM</a></li>
-      <li><a href="Data/Optimal_ws.csv" download>Optimal_ws</a></li>
-      <li><a href="Data/YP.txt" download>YP</a></li>
-      <li><a href="Data/Data example01.xls" download>Example01</a></li>
-    </ul>
-    </section>
+
+    <div class="subsection">
+      <h3>Forestry Data</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="Data/Argentina-bilateral-instruments-1810-2023.csv" download>Argentina</a></li>
+          <li><a href="Data/Matched_CHM_with_OptimalWindowSize.csv" download>Matched_CHM</a></li>
+          <li><a href="Data/Optimal_ws.csv" download>Optimal_ws</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Economics Data</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="Data/Salary.xlsx" download>Salary</a></li>
+          <li><a href="Data/YP.txt" download>YP</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Sample Data</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="Data/HS.xls" download>HS</a></li>
+          <li><a href="Data/Data example01.xls" download>Example01</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="notes">
     <h2>📕 Notes</h2>
-    <div class="download-link"></div>
-    <ul>
-      <li><a href="notes/Data_Cleaning_and_Preprocessing_for_Data_Science_Beginners.pdf" download>Clean_Process</a></li>
-      <li><a href="notes/Forestry Applications of Airborne Laser Scanning_ Concepts and Case Studies.pdf" download>LiDAR</a></li>
-      <li><a href="notes/LiDAR Remote Sensing and Applications.pdf" download>Remote_sensing</a></li>
-      <li><a href="notes/Python_Functions.pdf" download>Python_Functions</a></li>
-      <li><a href="notes/R-absolute_Beginners.pdf" download>R-absolute_Beginners</a></li>
-    </ul>
+
+    <div class="subsection">
+      <h3>Data Cleaning</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="notes/Data_Cleaning_and_Preprocessing_for_Data_Science_Beginners.pdf" download>Clean_Process</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Remote Sensing</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="notes/Forestry Applications of Airborne Laser Scanning_ Concepts and Case Studies.pdf" download>LiDAR</a></li>
+          <li><a href="notes/LiDAR Remote Sensing and Applications.pdf" download>Remote_sensing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Programming Basics</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="notes/Python_Functions.pdf" download>Python_Functions</a></li>
+          <li><a href="notes/R-absolute_Beginners.pdf" download>R-absolute_Beginners</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="books">
     <h2>📚 Books</h2>
-    <div class="download-link">
-      <a href="Books/An Introduction to R.pdf" download>Learn R by Doing</a>
-      <a href="Books/Introduction to Python.pdf" download>Python for Research</a>
-      <a href="Books/Python Programming_For everyone .pdf" download>Python for everyone</a>
-      <a href="Books/PythonNotesForProfessionals.pdf" download>Python for Professional</a>
-      <a href="Books/The Art of R_programming.pdf" download>The art of R_programming</a>
-      <a href="Books/R_for_data_science.pdf" download>R_for_data_science</a>
-      <a href="Books/Research Methodology.pdf" download>Research Methodology</a>
+
+    <div class="subsection">
+      <h3>R Books</h3>
+      <div class="download-link">
+        <a href="Books/An Introduction to R.pdf" download>Learn R by Doing</a>
+        <a href="Books/The Art of R_programming.pdf" download>The Art of R Programming</a>
+        <a href="Books/R_for_data_science.pdf" download>R for Data Science</a>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Python Books</h3>
+      <div class="download-link">
+        <a href="Books/Introduction to Python.pdf" download>Python for Research</a>
+        <a href="Books/Python Programming_For everyone .pdf" download>Python for Everyone</a>
+        <a href="Books/PythonNotesForProfessionals.pdf" download>Python for Professionals</a>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Research Books</h3>
+      <div class="download-link">
+        <a href="Books/Research Methodology.pdf" download>Research Methodology</a>
+      </div>
     </div>
   </section>
 
-  <section id="blog">
-    <h2>📝 Blog</h2>
-    <p><strong>Coming soon:</strong> My first post on "How to Choose Best software for Your Research!"</p>
-  </section>
-  <section id="codes's scripts">
+  <section id="codes-scripts">
     <h2>🧑‍💻 Coding</h2>
-    <div class="download-link"></div>
-    </ul>
-      <li><a href="Scripts/Reading_code.R" download>Introduction to R</a></li>
-      <li><a href="Scripts/Step by step reading and analysis lidR.R" download>R_Reading</a></li>
-      <li><a href="Scripts/Digital terrain model.R" download>DEM</a></li>
-      <li><a href="Scripts/Data example 01.R" download>Example01</a></li>
-      <li><a href="Scripts/YP.R" download>YP</a></li>
-      <li><a href="Scripts/Salary.R" download>Salary</a></li>
-    </ul>
+
+    <div class="subsection">
+      <h3>R Scripts</h3>
+      <div class="download-link">
+        <ul>
+          <li><a href="Scripts/Reading_code.R" download>Introduction to R</a></li>
+          <li><a href="Scripts/Step by step reading and analysis lidR.R" download>R_Reading</a></li>
+          <li><a href="Scripts/Digital terrain model.R" download>DEM</a></li>
+          <li><a href="Scripts/Data example 01.R" download>Example01</a></li>
+          <li><a href="Scripts/YP.R" download>YP</a></li>
+          <li><a href="Scripts/Salary.R" download>Salary</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>📬 Contact Me</h2>
-    <p>Email: ecloudm@gmail.com</p>
-    <p>Phone: +8617645067138</p>
-    <p>Whatsapp: +255711602178</p>
-    <p>Instagram: @Imah_matheew</p>
-    <p>GitHub: <a href="https://github.com/EC-GID" target="_blank">@Immah</a></p>
+  <section id="contact" class="contact-section">
+    <div class="contact-columns">
+
+      <div class="contact-column">
+        <h3>Contact Info</h3>
+        <p>📧 Email: <a href="mailto:ecloudm@gmail.com">ecloudm@gmail.com</a></p>
+        <p>📞 Phone: +86 176 4506 7138</p>
+        <p>💬 WhatsApp: +255 711 602 178</p>
+      </div>
+
+      <div class="contact-column">
+        <h3>Social Media</h3>
+        <p>📸 Instagram: @imah_matheew</p>
+        <p>💻 GitHub: <a href="https://github.com/EC-GID" target="_blank">@Immah</a></p>
+      </div>
+
+      <div class="contact-column">
+        <h3>Other Info</h3>
+        <p>🌍 Location: China / Tanzania</p>
+        <p>🕒 Available: Mon - Fri (Evenings)</p>
+      </div>
+
+    </div>
+
+    <div class="contact-footer">
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">About</a>
+    </div>
   </section>
+
+  <style>
+    .contact-section {
+      background-color: #2f4f76;
+      color: white;
+      padding: 50px 20px;
+      font-family: 'Arial', sans-serif;
+    }
+    .contact-columns {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+    .contact-column {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+    }
+    .contact-column h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .contact-column p, .contact-column a {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #dcdcdc;
+      text-decoration: none;
+    }
+    .contact-column a:hover {
+      text-decoration: underline;
+    }
+    .contact-footer {
+      text-align: center;
+      font-size: 14px;
+    }
+    .contact-footer a {
+      color: #dcdcdc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .contact-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 
   <footer>
     <p>© 2025 Immah's Data Hub. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
