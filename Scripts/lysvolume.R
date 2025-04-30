@@ -48,7 +48,7 @@ models$logistic <- nlsLM(H ~ a / (1 + (1 / b) * D^(-c)),
                          start = list(a = max(H), b = 1, c = 0.5))
 
 # 4. Richards Function
-models$richards <- nlsLM(H ~ a * (1 - exp(-b * D^c)),
+models$richards <- nlsLM(H ~ a * ((1 - exp(-b * D))^c),
                          start = list(a = max(H), b = 0.01, c = 1))
 
 # 5. Weibull Function
